@@ -17,6 +17,12 @@
   },
   "homepage": "https://github.com/swardbladpaulo/w4_adress_book#readme",
   "dependencies": {
-    "cypress": "^5.4.0"
+    "cypress": "^5.4.0",
+    "superstatic": "^7.0.1"
+  },
+
+  "scripts":{
+    "start": "superstatic src --port 3001", /*remove src when deploy on Github*/
+    "cy:run": "npm start & cypress open"
   }
 }
