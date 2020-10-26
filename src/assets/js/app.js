@@ -5,7 +5,7 @@ const renderContacts = () => {
 
   let div = document.querySelector('#contact-list')
   if (contacts) {
-    div.innerHTML = 'text'
+    div.innerHTML = ''
     const ul = document.createElement('ul')
 
     contacts.forEach(contact => {
@@ -22,7 +22,7 @@ const renderContacts = () => {
     div.appendChild(ul)
   } else {
     div.innerHTML = '<p>You have no contacts in your address book</p>'
-  }
+  }};
   document.addEventListener('DOMContentLoaded', () => {
     renderContacts()
     const contactForm = document.getElementById('new-contact-form')
@@ -38,7 +38,7 @@ const renderContacts = () => {
         company: company.value,
         notes: notes.value,
         twitter: twitter.value,
-      }
+      };
 
       console.log(contact)
 
@@ -51,4 +51,4 @@ const renderContacts = () => {
       
     });
   });
-}
+
